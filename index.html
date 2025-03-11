@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flight Tracker</h1>
+    <label for="icao">Enter Airport ICAO Code:</label>
+    <input type="text" id="icao" placeholder="E.g., JFK, LAX, DEL">
+    <button onclick="fetchFlights()">Get Flights</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Flight</th>
+                <th>Origin</th>
+                <th>Altitude</th>
+                <th>Speed (km/h)</th>
+            </tr>
+        </thead>
+        <tbody id="flightData"></tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
